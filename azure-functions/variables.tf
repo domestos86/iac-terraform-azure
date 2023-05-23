@@ -28,6 +28,11 @@ variable "function_name" {
   type        = string
 }
 
+variable "linux_function_app-name" {
+  description = "funkcja aplikacji Linux"
+  type        = string
+}
+
 variable "subscription_id" {
   description = "ID docelowej subskrypcji"
   type        = string
