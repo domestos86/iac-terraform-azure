@@ -14,7 +14,7 @@ resource "azurerm_storage_account" "example" {
 resource "azurerm_storage_container" "example" {
   name                  = var.storage_container_name
   storage_account_name  = azurerm_storage_account.example.name
-  container_access_type = "private"
+  container_access_type = var.storage_container_access_type
 }
 
 resource "azurerm_storage_blob" "example" {
@@ -22,7 +22,6 @@ resource "azurerm_storage_blob" "example" {
   storage_account_name   = azurerm_storage_account.example.name
   storage_container_name = azurerm_storage_container.example.name
   type                   = "Block"
-  source_content_type    = "application/octet-stream"
-  content_type           = "application/octet-stream"
-}
+  source_content         = var.storage_blob_source_content
+ }
 
