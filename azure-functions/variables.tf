@@ -34,7 +34,7 @@ variable "linux_function_app-name" {
 }
 
 variable "subscription_id" {
-  description = "ID docelowej subskrypcji"
+  description = "ID subskrypcji"
   type        = string
 }
 
