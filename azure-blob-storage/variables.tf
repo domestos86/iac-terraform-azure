@@ -1,15 +1,15 @@
 variable "resource_group_name" {
-  description = "Nazwa grupy zasobów"
+  description = "Nazwa grupy"
   type        = string
 }
 
 variable "resource_group_location" {
-  description = "Lokalizacja grupy zasobów"
+  description = "Lokalizacja grupy"
   type        = string
 }
 
 variable "storage_account_name" {
-  description = "Nazwa konta Azure Blob Storage"
+  description = "Nazwa konta"
   type        = string
 }
 
@@ -18,7 +18,17 @@ variable "storage_container_name" {
   type        = string
 }
 
+variable "storage_blob_type" {
+  description = "Typ pliku"
+  type        = string
+}
+
 variable "storage_blob_name" {
-  description = "Nazwa bloba"
+  description = "Nazwa pliku bloba"
+  type        = string
+}
+
+variable "storage_blob_source_content" {
+  description = "Zawartość pliku"
   type        = string
 }
