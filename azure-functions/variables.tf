@@ -1,15 +1,15 @@
 variable "resource_group_name" {
-  description = "Nazwa grupy zasobów"
+  description = "Nazwa zasobów grupy w Azure"
   type        = string
 }
 
-variable "location" {
-  description = "Lokalizacja grupy zasobów"
+variable "resource_group_location" {
+  description = "Lokalizacja zasobów grupy"
   type        = string
 }
 
 variable "storage_account_name" {
-  description = "Nazwa konta magazynowania"
+  description = "Nazwa konta"
   type        = string
 }
 
@@ -19,7 +19,7 @@ variable "app_service_plan_name" {
 }
 
 variable "function_app_name" {
-  description = "Nazwa aplikacji funkcji"
+  description = "Nazwa aplikacji funkcji Azure"
   type        = string
 }
 
@@ -27,23 +27,13 @@ variable "function_name" {
   description = "Nazwa funkcji"
   type        = string
 }
-variable "subscription_id" {
-  description = "ID docelowej subskrypcji Azure"
-  type        = string
-}
 
-variable "tenant_id" {
-  description = "ID dzierżawy Azure Active Directory"
+variable "subscription_id" {
+  description = "ID docelowej subskrypcji"
   type        = string
 }
 
 variable "client_id" {
-  description = "ID aplikacji Azure Active Directory"
+  description = "ID aplikacji Azure"
   type        = string
-}
-
-variable "client_secret" {
-  description = "Sekret powiązany z aplikacją Azure Active Directory"
-  type        = string
-  sensitive   = true
 }
