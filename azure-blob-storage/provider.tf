@@ -1,3 +1,3 @@
 provider "azurerm" {
-  version = "<wstaw tutaj odpowiednią wersję Azure>"
+  version = "2.0.0"
 }
