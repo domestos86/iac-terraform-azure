@@ -1,1 +1,1 @@
-# iac-terraform-azure
+konfiguracja Terraform dla Azure Functions
